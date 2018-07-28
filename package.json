@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/Elegant-Org/Elegant-UI/issues"
   },
-  "homepage": "https://github.com/Elegant-Org/Elegant-UI#readme"
+  "homepage": "https://github.com/Elegant-Org/Elegant-UI#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
 }

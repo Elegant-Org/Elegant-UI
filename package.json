@@ -9,7 +9,7 @@
   "scripts": {
     "compile-scss": "node-sass --output-style expanded --source-map true src/elegant.scss dist/elegant.css",
     "autoprefix": "postcss --use autoprefixer --output dist/elegant.css dist/elegant.css",
-    "clean": "postcss --use postcss-clean --output dist/elegant.css dist/elegant.css",
+    "clean": "postcss --use postcss-clean --output dist/elegant.min.css dist/elegant.css",
     "start": "npm run compile-scss -- --watch",
     "build": "npm run compile-scss && npm run autoprefix && npm run clean"
   },

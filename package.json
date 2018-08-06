@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-scss": "node-sass --output-style expanded --source-map true src/elegant.scss build/elegant.css",
+    "autoprefix": "postcss --use autoprefixer --output build/elegant.css build/elegant.css",
+    "start": "npm run compile-scss -- --watch"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
   },
   "homepage": "https://github.com/Elegant-Org/Elegant-UI#readme",
   "devDependencies": {
-    "node-sass": "^4.9.2"
+    "autoprefixer": "^9.1.0",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^6.0.0"
   }
 }

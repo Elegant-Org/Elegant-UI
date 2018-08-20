@@ -1,0 +1,58 @@
+/* Typography Base Styles*/
+
+html {
+  font-size: $base-font-size;
+  font-family: $family-sans-serif; // This is just for reference
+  text-rendering: $render-mode;
+  text-size-adjust: 100%;
+  @include font-smoothing();
+}
+
+body {
+  font-size: $base-font-size;
+  color: $base-font-color;
+  line-height: $base-line-height;
+}
+
+h1 {
+  font-size:   $size-7;
+  line-height: $base-line-height;
+}
+
+h2 {
+  font-size:   $size-6;
+  line-height: $base-line-height;
+}
+
+h3 {
+  font-size:   $size-5;
+  line-height: $base-line-height;
+}
+
+h4 {
+  font-size:   $size-4;
+  line-height: $base-line-height;
+}
+
+h5,h6 {
+  font-size:   $size-1;
+  line-height: $base-line-height;
+}
+
+/* Unbold header elements by default */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $weight-normal;
+}
+
+/* Typography Emphasis ad Styling*/
+strong,b {
+  font-weight: $weight-bold;
+}
+
+a {
+  color: $primary-black;
+  &:hover {
+    color: $primary-black;
+    transition: color .15s ease 0s;
+  }
+}

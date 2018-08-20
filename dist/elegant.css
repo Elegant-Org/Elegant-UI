@@ -1,4 +1,871 @@
+/* Import modules */
+/* Project Setting */
+/* Typography */
+/* Typography Sizes and Weights */
+/* Typography Font Weights */
+/* Miscellaneous */
+/* Color */
+/* Z-index */
+/* Debug CSS */
+/* Fill Color in block */
+/** Font Smoothing
+* This will be enabled automatically when using the .slab class.
+* You may want to disable it for performance reasons, since these styles will cascade down.
+* https://davidwalsh.name/font-smoothing
+**/
+/* Block Box Shadow */
+/* Include core modules*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
 body {
   margin: 0;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9lbGVnYW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDRSxVQUFTO0NBQ1YiLCJmaWxlIjoiZWxlZ2FudC5jc3MifQ== */
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Flex Grid -
+ * Version: 0.3.5
+ *
+ * Simple grid built with flex box and sass.
+ *
+ * Matthew Simo - matthew.a.simo@gmail.com
+ */
+/**
+ * Grid setup
+ *
+ * The grid will calculate dimensions based on these two variables:
+ * $elegant-grid-columns will inform the grid loops how many columns there should be.
+ * $elegant-grid-gutter will inform the grid loops how big eac column's gutters should be.
+ *
+ * The grid will name columns, rows, offsets based on these three variables:
+ * $elegant-grid-class-row string used for the row class
+ * $elegant-grid-class-col string used for the column class
+ * $elegant-grid-class-off string used for the offset class
+ */
+/**
+ * Break point namespace object
+ *
+ * Set the default namespace object with these defaults with the
+ * understanding that you can pass in whatever you might require for your site.
+ *
+ * $elegant-grid-breakpoints is a Sass list with nested lists inside. Each sub list defines two things.
+ * 1. The namespace for that breakpoint. (Required) (i.e. xs, sm, md, lg)
+ * 2. The min-width measurement for the breakpoint for that namespace. (i.e. 48em, 62em, 75em)
+ *
+ * Note: These should be in the proper order (at least till libsass handles map keys properly).
+ *
+ * Note: If the measurement is left out then it will be skipped when generating
+ * the grid and applied to global styles.
+ *
+ */
+/**
+ * Class Name Defaults
+ *
+ * Define class names for columns, rows and offsets in case compatibility with other
+ * libraries is necessary.
+/**
+ * Calculate column size percentage
+ */
+/**
+ * Spacing mixin to create uniform margin/padding
+ */
+/**
+ * Row wrapper class, flex box parent.
+ */
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 1px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.col-xs, .col-sm, .col-md, .col-lg {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+/**
+ * Generate a set of grid column classes using a namespace
+ *
+ * .col-[namespace] for intelligent column division
+ * .col-[namespace]-[number] for a column that covers a specific number of columns (e.g. 1-12 by default)
+ * .off-[namespace]-[number] for pushing a col a specific number of columns (e.g. 1-11 by default)
+ * .off-[namespace]-reset for resetting a col's offset for that and larger namespaces
+ */
+/**
+ * Build the grid in two steps, to help minimize file size
+ * Step 1, for each namespace, create the grid-base
+ * Step 2, for each namespace, wrap the col width/offset measurements in their breakpoint media query
+ */
+.col-xs-1 {
+  flex-basis: 8.33333%;
+  max-width: 8.33333%;
+}
+
+.col-xs-2 {
+  flex-basis: 16.66667%;
+  max-width: 16.66667%;
+}
+
+.col-xs-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
+}
+
+.col-xs-5 {
+  flex-basis: 41.66667%;
+  max-width: 41.66667%;
+}
+
+.col-xs-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  flex-basis: 58.33333%;
+  max-width: 58.33333%;
+}
+
+.col-xs-8 {
+  flex-basis: 66.66667%;
+  max-width: 66.66667%;
+}
+
+.col-xs-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
+}
+
+.col-xs-11 {
+  flex-basis: 91.66667%;
+  max-width: 91.66667%;
+}
+
+.col-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.off-xs-1 {
+  margin-left: 8.33333%;
+}
+
+.off-xs-2 {
+  margin-left: 16.66667%;
+}
+
+.off-xs-3 {
+  margin-left: 25%;
+}
+
+.off-xs-4 {
+  margin-left: 33.33333%;
+}
+
+.off-xs-5 {
+  margin-left: 41.66667%;
+}
+
+.off-xs-6 {
+  margin-left: 50%;
+}
+
+.off-xs-7 {
+  margin-left: 58.33333%;
+}
+
+.off-xs-8 {
+  margin-left: 66.66667%;
+}
+
+.off-xs-9 {
+  margin-left: 75%;
+}
+
+.off-xs-10 {
+  margin-left: 83.33333%;
+}
+
+.off-xs-11 {
+  margin-left: 91.66667%;
+}
+
+.off-xs-reset {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+  }
+  .col-sm-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+  }
+  .col-sm-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .col-sm-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+  .col-sm-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+  }
+  .col-sm-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-sm-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+  }
+  .col-sm-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+  }
+  .col-sm-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .col-sm-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+  .col-sm-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+  }
+  .col-sm-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .off-sm-1 {
+    margin-left: 8.33333%;
+  }
+  .off-sm-2 {
+    margin-left: 16.66667%;
+  }
+  .off-sm-3 {
+    margin-left: 25%;
+  }
+  .off-sm-4 {
+    margin-left: 33.33333%;
+  }
+  .off-sm-5 {
+    margin-left: 41.66667%;
+  }
+  .off-sm-6 {
+    margin-left: 50%;
+  }
+  .off-sm-7 {
+    margin-left: 58.33333%;
+  }
+  .off-sm-8 {
+    margin-left: 66.66667%;
+  }
+  .off-sm-9 {
+    margin-left: 75%;
+  }
+  .off-sm-10 {
+    margin-left: 83.33333%;
+  }
+  .off-sm-11 {
+    margin-left: 91.66667%;
+  }
+  .off-sm-reset {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+  }
+  .col-md-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+  }
+  .col-md-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+  .col-md-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+  }
+  .col-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+  }
+  .col-md-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+  }
+  .col-md-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+  .col-md-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+  }
+  .col-md-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .off-md-1 {
+    margin-left: 8.33333%;
+  }
+  .off-md-2 {
+    margin-left: 16.66667%;
+  }
+  .off-md-3 {
+    margin-left: 25%;
+  }
+  .off-md-4 {
+    margin-left: 33.33333%;
+  }
+  .off-md-5 {
+    margin-left: 41.66667%;
+  }
+  .off-md-6 {
+    margin-left: 50%;
+  }
+  .off-md-7 {
+    margin-left: 58.33333%;
+  }
+  .off-md-8 {
+    margin-left: 66.66667%;
+  }
+  .off-md-9 {
+    margin-left: 75%;
+  }
+  .off-md-10 {
+    margin-left: 83.33333%;
+  }
+  .off-md-11 {
+    margin-left: 91.66667%;
+  }
+  .off-md-reset {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+  }
+  .col-lg-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+  }
+  .col-lg-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .col-lg-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+  .col-lg-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+  }
+  .col-lg-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-lg-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+  }
+  .col-lg-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+  }
+  .col-lg-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .col-lg-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+  .col-lg-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+  }
+  .col-lg-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .off-lg-1 {
+    margin-left: 8.33333%;
+  }
+  .off-lg-2 {
+    margin-left: 16.66667%;
+  }
+  .off-lg-3 {
+    margin-left: 25%;
+  }
+  .off-lg-4 {
+    margin-left: 33.33333%;
+  }
+  .off-lg-5 {
+    margin-left: 41.66667%;
+  }
+  .off-lg-6 {
+    margin-left: 50%;
+  }
+  .off-lg-7 {
+    margin-left: 58.33333%;
+  }
+  .off-lg-8 {
+    margin-left: 66.66667%;
+  }
+  .off-lg-9 {
+    margin-left: 75%;
+  }
+  .off-lg-10 {
+    margin-left: 83.33333%;
+  }
+  .off-lg-11 {
+    margin-left: 91.66667%;
+  }
+  .off-lg-reset {
+    margin-left: 0;
+  }
+}
+
+/* Typography Base Styles*/
+html {
+  font-size: 1rem;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1rem;
+  color: #4E535A;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.125rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+h5, h6 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Unbold header elements by default */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* Typography Emphasis ad Styling*/
+strong, b {
+  font-weight: 700;
+}
+
+a {
+  color: #4E535A;
+}
+
+a:hover {
+  color: #4E535A;
+  transition: color .15s ease 0s;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9lbGVnYW50LnNjc3MiLCIuLi9zcmMvdXRpbGl0aWVzL19zZXR0aW5nLnNjc3MiLCIuLi9zcmMvdXRpbGl0aWVzL192YXJpYWJsZXMuc2NzcyIsIi4uL3NyYy91dGlsaXRpZXMvX21peGluLnNjc3MiLCIuLi9zcmMvY29yZS9fYWxsLnNjc3MiLCIuLi9zcmMvY29yZS9fbm9ybWFsaXplLnNjc3MiLCJlbGVnYW50LmNzcyIsIi4uL3NyYy9jb3JlL19ncmlkLnNjc3MiLCIuLi9zcmMvY29yZS9fdHlwb2dyYXBoeS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG9CQUFvQjtBQ0FwQixxQkFBcUI7QUNBckIsZ0JBQWdCO0FBS2hCLGtDQUFrQztBQWFsQyw2QkFBNkI7QUFRN0IsbUJBQW1CO0FBTW5CLFdBQVc7QUFvQlgsYUFBYTtBQ3BEYixlQUFlO0FBT2YseUJBQXlCO0FBT3pCOzs7O0dBSUc7QUFXSCxzQkFBc0I7QUM3QnRCLHlCQUF5QjtBQ0F6Qiw0RUFBNEU7QUFFNUU7Z0ZBQ2dGO0FBRWhGOzs7R0FHRztBQUVIO0VBQ0Usa0JBQWlCO0VBQUUsT0FBTztFQUMxQiwrQkFBOEI7RUFBRSxPQUFPO0NBQ3hDOztBQUVEO2dGQUNnRjtBQUVoRjs7R0FFRztBQUVIO0VBQ0UsVUFBUztDQUNWOztBQUVEOzs7R0FHRztBQUVIO0VBQ0UsZUFBYztFQUNkLGlCQUFnQjtDQUNqQjs7QUFFRDtnRkFDZ0Y7QUFFaEY7OztHQUdHO0FBRUg7RUFDRSx3QkFBdUI7RUFBRSxPQUFPO0VBQ2hDLFVBQVM7RUFBRSxPQUFPO0VBQ2xCLGtCQUFpQjtFQUFFLE9BQU87Q0FDM0I7O0FBRUQ7OztHQUdHO0FBRUg7RUFDRSxrQ0FBaUM7RUFBRSxPQUFPO0VBQzFDLGVBQWM7RUFBRSxPQUFPO0NBQ3hCOztBQUVEO2dGQUNnRjtBQUVoRjs7R0FFRztBQUVIO0VBQ0UsOEJBQTZCO0NBQzlCOztBQUVEOzs7R0FHRztBQUVIO0VBQ0Usb0JBQW1CO0VBQUUsT0FBTztF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 */

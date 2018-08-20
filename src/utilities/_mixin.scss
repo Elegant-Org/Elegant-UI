@@ -1,0 +1,33 @@
+/* Debug CSS */
+@mixin is-debug {
+  @if($is-debug == true){
+    border: 2px dotted #C54047;
+  }
+}
+
+/* Fill Color in block */
+@mixin fill-color($hex) {
+  background-color: $hex;
+  border-color: transparent;
+}
+
+
+/** Font Smoothing
+* This will be enabled automatically when using the .slab class.
+* You may want to disable it for performance reasons, since these styles will cascade down.
+* https://davidwalsh.name/font-smoothing
+**/
+@mixin font-smoothing {
+	@if $font-smoothing == true { // Font smoothing variable exists in the variables partial and can be overridden;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+} @else {
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
+	}
+}
+
+/* Block Box Shadow */
+@mixin box-shadow {
+  box-shadow: 0 0 0 1px rgba(89,105,129,0.1), 0 1px 3px 0 rgba(89,105,129,0.1), 0 1px 2px 0 rgba(0,0,0,0.05);
+}

@@ -28,6 +28,23 @@
 }
 
 /* Block Box Shadow */
-@mixin box-shadow {
-  box-shadow: 0 0 0 1px rgba(89,105,129,0.1), 0 1px 3px 0 rgba(89,105,129,0.1), 0 1px 2px 0 rgba(0,0,0,0.05);
+@mixin box-shadow($depth) {
+  @if($depth == '1'){
+    box-shadow: $depth-1;
+  }
+  @if($depth == '1-half'){
+    box-shadow: $depth-1-half;
+  }
+  @if($depth == '2'){
+    box-shadow: $depth-2;
+  }
+  @if($depth == '3'){
+    box-shadow: $depth-3;
+  }
+  @if($depth == '4'){
+    box-shadow: $depth-4;
+  }
+  @if($depth == '5'){
+    box-shadow: $depth-5;
+  }
 }

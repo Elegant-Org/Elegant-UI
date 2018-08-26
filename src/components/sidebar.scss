@@ -1,8 +1,8 @@
 .sidebar {
   height: 100vh;
   padding: $space-normal-xx;
-  @include box-shadow();
-  @include fill-color($secondary-silver);
+  @include box-shadow('1-half');
+  @include fill-color($shades-silver-light);
   &-brand {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,37 @@
+.has {
+  &-purple {
+    &--background {
+      @include fill-color($secondary-silver);
+    }
+  }
+  /* elevation modified*/
+  &-depth {
+    &-0 {
+      box-shadow: none !important;
+    }
+    &-1 {
+      box-shadow:  $depth-1;
+    }
+    &-1-half {
+      box-shadow:  $depth-1-half;
+    }
+    &-2 {
+      box-shadow:  $depth-2;
+    }
+    &-3 {
+      box-shadow:  $depth-3;
+    }
+    &-4 {
+      box-shadow:  $depth-4;
+    }
+    &-5 {
+      box-shadow:  $depth-5;
+    }
+  }
+}
+
+.is {
+  &-active {
+    font-weight: $weight-bold;
+  }
+}

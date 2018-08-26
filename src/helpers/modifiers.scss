@@ -1,3 +1,4 @@
+/* has modified*/
 .has {
   &-purple {
     &--background {
@@ -30,6 +31,7 @@
   }
 }
 
+/* is modified*/
 .is {
   &-active {
     font-weight: $weight-bold;

@@ -2,7 +2,7 @@
   height: 100vh;
   padding: $space-normal-xx;
   @include box-shadow('1-half');
-  @include fill-color($shades-silver-light);
+  @include fill-color($primary-white);
   &-brand {
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     padding-left: 0;
     padding: $space-normal-xx;
     &-item {
-      font-size: $size-5;
+      font-size: $size-4;
       padding: $space-small-yy;
     }
   }

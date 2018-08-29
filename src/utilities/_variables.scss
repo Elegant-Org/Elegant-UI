@@ -82,9 +82,11 @@ $z4: 400 !default;
 /* Space */
 $space-normal-xx: 0 1.5em 0 1.5em;
 $space-normal-yy: 1.5em 0 1.5em 0;
+$space-normal: 1.5em;
 
 $space-small-xx: 0 0.625em 0 0.625em;
 $space-small-yy: 0.625em 0 0.625em 0;
+$space-small: 0.625em;
 
 /* Depth */
 $depth-1: 0 2px 2px 0 rgba(0,0,0,0.14),

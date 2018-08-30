@@ -34,11 +34,34 @@
   &-container {
     padding: $space-normal;
   }
+  /* No */
+  &-no {
+    &--margin {
+      margin: 0;
+    }
+    &--padding {
+      padding: 0;
+    }
+  }
 }
 
 /* is modified*/
 .is {
   &-active {
     font-weight: $weight-bold;
+  }
+  &-text {
+    &--uppercase {
+      text-transform: uppercase;
+    }
+    &--capitalize {
+      text-transform: capitalize;
+    }
+    &--bold {
+      font-weight: $weight-bold;
+    }
+    &--bolder{
+      font-weight: $weight-bolder;
+    }
   }
 }

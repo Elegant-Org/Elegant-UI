@@ -1,7 +1,7 @@
 /* Debug CSS */
 @mixin is-debug {
   @if($is-debug == true){
-    border: 2px dotted #C54047;
+    border: 2px solid $secondary-red;
   }
 }
 
@@ -46,5 +46,15 @@
   }
   @if($depth == '5'){
     box-shadow: $depth-5;
+  }
+  @if($depth == 'bottom-shadow'){
+    box-shadow: $bottom-shadow;
+  }
+}
+
+/* CTA Uppercase */
+@mixin action-text-style{
+  @if $is-action-uppercase == true {
+    text-transform: uppercase;
   }
 }

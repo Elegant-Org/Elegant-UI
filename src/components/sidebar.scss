@@ -3,19 +3,27 @@
   padding: $space-normal-xx;
   @include box-shadow('1-half');
   @include fill-color($primary-white);
+  /* Block Debuging */
+  @include is-debug();
   &-brand {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: $space-normal-yy;
+    /* Block Debuging */
+    @include is-debug();
   }
   &-menu {
     line-height: $base-line-height;
     padding-left: 0;
     padding: $space-normal-xx;
+    /* Block Debuging */
+    @include is-debug();
     &-item {
       font-size: $size-4;
       padding: $space-small-yy;
+      /* Block Debuging */
+      @include is-debug();
     }
   }
 }

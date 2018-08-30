@@ -20,7 +20,8 @@
  * $elegant-grid-class-off string used for the offset class
  */
 $elegant-grid-columns: 12 !default;
-$elegant-grid-gutter: 0.5rem !default;
+//$elegant-grid-gutter: 0.5rem !default;
+$elegant-grid-gutter: 0rem !default;
 
 $elegant-grid-class-row: 'row' !default;
 $elegant-grid-class-col: 'col' !default;
@@ -134,6 +135,8 @@ $elegant-grid-breakpoints: (
   // Run the loop for as many columns as speficied
   @for $i from 1 through $elegant-grid-columns {
     .#{ $elegant-grid-class-col }-#{$namespace}-#{$i} {
+      /* Block Debuging */
+      @include is-debug();
       flex-basis: get-col-percent($i);
       max-width:  get-col-percent($i);
     }

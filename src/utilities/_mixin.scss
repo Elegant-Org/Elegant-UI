@@ -1,7 +1,7 @@
 /* Debug CSS */
 @mixin is-debug {
   @if($is-debug == true){
-    border: 2px solid $secondary-red;
+    border: 1px dotted $secondary-red;
   }
 }
 

@@ -1,5 +1,5 @@
 /* is modified*/
-.is{
+.has{
   /* full height element*/
   &-full{
     &--height {
@@ -11,6 +11,19 @@
   &-gap {
     &--normal {
       padding: $space-normal-xx;
+    }
+    &--small {
+      padding: $space-small-xx;
+    }
+  }
+  /* radius */
+  &-radius {
+    border-radius: $radius;
+    &--small {
+      border-radius: $radius-small;
+    }
+    &--large {
+      border-radius: $radius-large;
     }
   }
 

@@ -28,6 +28,9 @@
     &-5 {
       box-shadow:  $depth-5;
     }
+    &-bottom {
+      box-shadow: $bottom-shadow;
+    }
   }
 
   /* Container */

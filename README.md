@@ -1,4 +1,4 @@
-# [Elegant UI](https://elegant-surge.sh)
+# [Elegant UI](https://elegant.surge.sh/)
 Modern CSS framework based on flexbox & grid
 
 [![npm version](http://img.shields.io/npm/v/elegant-ui.svg?style=flat)](https://www.npmjs.com/package/elegant-ui)

@@ -51,6 +51,7 @@ strong,b {
 
 a {
   color: $primary-black;
+  text-decoration: none;
   &:hover {
     color: $primary-black;
     transition: color .15s ease 0s;

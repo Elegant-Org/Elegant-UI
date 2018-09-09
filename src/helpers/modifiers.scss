@@ -1,0 +1,86 @@
+/* has modified*/
+.has {
+  &-purple {
+    &--background {
+      @include fill-color($secondary-silver);
+    }
+  }
+  /* elevation modified*/
+  &-depth {
+    &-0 {
+      box-shadow: none !important;
+    }
+    &-1 {
+      box-shadow:  $depth-1;
+    }
+    &-1-half {
+      box-shadow:  $depth-1-half;
+    }
+    &-2 {
+      box-shadow:  $depth-2;
+    }
+    &-3 {
+      box-shadow:  $depth-3;
+    }
+    &-4 {
+      box-shadow:  $depth-4;
+    }
+    &-5 {
+      box-shadow:  $depth-5;
+    }
+    &-bottom {
+      box-shadow: $bottom-shadow;
+    }
+  }
+
+  /* Container */
+  &-container {
+    padding: $space-normal;
+  }
+  /* No */
+  &-no {
+    &--margin {
+      margin: 0;
+    }
+    &--padding {
+      padding: 0;
+    }
+    &--background {
+      background-color: transparent !important;
+      border-color: transparent !important;
+    }
+    &--box-shadow {
+      box-shadow: none !important;
+    }
+  }
+}
+
+/* is modified*/
+.is {
+  &-debug {
+    border: 1px dotted $secondary-red;
+  }
+  &-active {
+    font-weight: $weight-bold;
+  }
+  &-hidden {
+    display: none;
+  }
+  &-shown {
+    display: block;
+  }
+  &-text {
+    &--uppercase {
+      text-transform: uppercase;
+    }
+    &--capitalize {
+      text-transform: capitalize;
+    }
+    &--bold {
+      font-weight: $weight-bold;
+    }
+    &--bolder{
+      font-weight: $weight-bolder;
+    }
+  }
+}

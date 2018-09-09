@@ -339,3 +339,25 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * List
+ */
+ul {
+  list-style: none;
+}
+
+/* Iframe */
+iframe {
+  border: 0;
+}
+/* Table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}

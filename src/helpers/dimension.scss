@@ -1,0 +1,30 @@
+/* is modified*/
+.has{
+  /* full height element*/
+  &-full{
+    &--height {
+      height: 100vh;
+    }
+  }
+
+  /* space between*/
+  &-gap {
+    &--normal {
+      padding: $space-normal-xx;
+    }
+    &--small {
+      padding: $space-small-xx;
+    }
+  }
+  /* radius */
+  &-radius {
+    border-radius: $radius;
+    &--small {
+      border-radius: $radius-small;
+    }
+    &--large {
+      border-radius: $radius-large;
+    }
+  }
+
+}

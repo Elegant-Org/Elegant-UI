@@ -34,7 +34,7 @@ $radius-large: 6px !default;
 // Primary
 $primary-black: #4E535A !default;
 $primary-purple: #79589E !default;
-$primary-white: #FBFBFD !default;
+$primary-white: #FFFFFF !default;
 $primary-blue: #3268B9 !default;
 
 // Secondary
@@ -45,29 +45,37 @@ $secondary-silver: #E3E7EF !default;
 $secondary-green: #1ABC9C !default;
 
 // Shades of Colors
-$shades-black-near:	#262B31;
-$shades-black-light: #7A7F87;
+$shades-black-near:	#262B31 !default;
+$shades-black-light: #7A7F87 !default;
 
-$shades-silver-light: #EEF1F6;
-$shades-silver-lighter: #EEF1F6;
+$shades-silver-light: #EEF1F6 !default;
+$shades-silver-lighter: #EEF1F6 !default;
 
-$shades-purple-light: #A985CF;
-$shades-purple-dark: #4B2E6F;
+$shades-purple-light: #A985CF !default;
+$shades-purple-dark: #4B2E6F !default;
 
-$shades-green-dark: #428F54;
-$shades-green-light: #A3F3B1;
+$shades-green-dark: #428F54 !default;
+$shades-green-light: #A3F3B1 !default;
 
-$shades-yellow-dark: #C88906;
-$shades-yellow-light: #FFEB75;
+$shades-yellow-dark: #C88906 !default;
+$shades-yellow-light: #FFEB75 !default;
 
-$shades-blue-dark: #003E88;
-$shades-blue-light: #6B95EC;
+$shades-blue-dark: #003E88 !default;
+$shades-blue-light: #6B95EC !default;
 
-$shades-red-dark: #C54047;
-$shades-red-light: #FFA4A1;
+$shades-red-dark: #C54047 !default;
+$shades-red-light: #FFA4A1 !default;
 
-$shades-gray-dark: #687485;
-$shades-gray-light: #C7D4E7;
+$shades-gray-dark: #687485 !default;
+$shades-gray-light: #C7D4E7 !default;
+
+/* Color Based*/
+$primary: $primary-purple !default;
+
+$info: $secondary-gray !default;
+$success: $secondary-green !default;
+$warning: $secondary-yellow !default;
+$danger: $secondary-red !default;
 
 /* Global Accessor */
 $background-color: $primary-white;

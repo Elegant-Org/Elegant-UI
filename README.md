@@ -22,7 +22,7 @@ npm i elegant-ui
 Please read [CONTRIBUTING](https://github.com/Elegant-Org/Elegant-UI/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Elegant-Org/Elegant-UI/blob/master/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Elegant-Org/Elegant-UI/blob/master/LICENSE) file for details
 
 #### Acknowledgement
 Inspired by **Bulma Framework**

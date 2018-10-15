@@ -2,4 +2,5 @@ body {
   background-color: $background-color;
   overflow-x: hidden;
   overflow-y: auto;
+  box-sizing: border-box;
 }

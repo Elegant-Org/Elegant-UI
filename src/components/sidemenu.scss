@@ -5,26 +5,30 @@
         margin: $space-small 0 $space-small;
         padding: $space-small;
         @include is-debug();
-        background-color: red;
         a {
             display: flex;
             flex-direction: column;
             text-align: -webkit-center;
+            img {
+                height: 32px;
+                width: 32px
+            }
+            span {
+                font-size: 12px;
+            }
         }
-        span {
-            font-size: 12px;
-        }
+        transition: $cubic-transition;
     }
     .item:first-child {
         margin-top: 0px;
     }
     .item:hover {
-        @include box-shadow('bottom-shadow');
+        @include box-shadow('1');
         @include fill-color($primary-white);
         border-radius: $radius;
     }
     .is-active {
-        @include box-shadow('bottom-shadow');
+        @include box-shadow('1');
         @include fill-color($primary-white);
         border-radius: $radius;
     }

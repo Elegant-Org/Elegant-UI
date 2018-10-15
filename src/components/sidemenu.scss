@@ -1,0 +1,32 @@
+.sidemenu {
+    /* Block Debuging */
+    @include is-debug();
+    .item {
+        margin: $space-small 0 $space-small;
+        padding: $space-small;
+        @include is-debug();
+        background-color: red;
+        a {
+            display: flex;
+            flex-direction: column;
+            text-align: -webkit-center;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+    .item:first-child {
+        margin-top: 0px;
+    }
+    .item:hover {
+        @include box-shadow('bottom-shadow');
+        @include fill-color($primary-white);
+        border-radius: $radius;
+    }
+    .is-active {
+        @include box-shadow('bottom-shadow');
+        @include fill-color($primary-white);
+        border-radius: $radius;
+    }
+
+}

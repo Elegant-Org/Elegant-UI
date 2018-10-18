@@ -18,7 +18,7 @@ table {
     }
     /* Zebra striping */
     tbody tr:nth-of-type(even) { 
-        background: $shades-silver-light; 
+        @include fill-color($shades-silver-light);
     }
     tbody tr {
         height:48px; 

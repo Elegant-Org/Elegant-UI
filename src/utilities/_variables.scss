@@ -6,7 +6,7 @@ $render-mode: optimizeLegibility !default;
 /* Typography Sizes and Weights */
 
 $base-font-size: 1rem !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.2 !default;
 
 $size-1: 0.875rem !default; // 14px For <p>,<li>,<h5>,<h6>
 $size-2: 0.6875rem !default; // 12px For small message;
@@ -23,6 +23,15 @@ $weight-medium: 500 !default;
 $weight-semibold: 600 !default;
 $weight-bold: 700 !default;
 $weight-bolder: 900 !default;
+
+$elegant-font-weight-map: (
+    light: $weight-light,
+    normal: $weight-normal,
+    medium: $weight-medium,
+    semibold: $weight-semibold,
+    bold: $weight-bold,
+    bolder: $weight-bolder,
+);
 
 /* Miscellaneous */
 $radius-small: 2px !default;
@@ -90,6 +99,8 @@ $info: $secondary-gray !default;
 $success: $secondary-green !default;
 $warning: $secondary-yellow !default;
 $danger: $secondary-red !default;
+
+$text: $primary-black;
 
 /* Global Accessor */
 $background-color: $primary-white;

@@ -45,11 +45,51 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $weight-normal;
 }
 
+p {
+  font-size: $size-3;
+  line-height: $base-line-height;
+  color: $text;
+}
+
 /* Typography Emphasis ad Styling*/
 strong,b {
   font-weight: $weight-bold;
 }
 
+blockquote {
+  background: $secondary-silver;
+  border-left: $space-small solid $info;
+  margin: $space-small 0px $space-small $space-normal;
+  padding: $space-small $space-small;
+  border-radius: $radius;
+  quotes: "\201C""\201D""\2018""\2019";
+  &:before {
+    color: $info;
+    font-size: $size-7;
+    content: open-quote;
+    line-height: 0.1em;
+    margin-right: $space-small;
+    vertical-align: -0.4em;
+  }
+  p {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+
+.has {
+  /* Font Weight */
+  &-font-weight {
+    @each $weight-name, $weight in $elegant-font-weight-map {
+      &--#{$weight-name}{
+        font-weight: $weight
+      }
+    }
+  }
+}
+
+/* Anchor tab */
 a {
   color: $primary-black;
   text-decoration: none;

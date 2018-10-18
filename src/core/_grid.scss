@@ -23,10 +23,9 @@ $elegant-grid-columns: 12 !default;
 $elegant-grid-gutter: 0.5rem !default;
 // $elegant-grid-gutter: 0rem !default;
 
-$elegant-grid-class-row: 'row' !default;
-$elegant-grid-class-col: 'col' !default;
-$elegant-grid-class-off: 'off' !default;
-
+$elegant-grid-class-row: 'is-row' !default;
+$elegant-grid-class-col: 'is-col' !default;
+$elegant-grid-class-off: 'is-off' !default;
 
 
 /**

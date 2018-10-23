@@ -1,23 +1,23 @@
 .sidemenu {
     /* Block Debuging */
     @include is-debug();
+    a {
+        display: flex;
+        flex-direction: column;
+        text-align: -webkit-center;
+        img {
+            height: 32px;
+            width: 32px
+        }
+        span {
+            font-size: 12px;
+        }
+    }
     .item {
         margin: $space-small 0 $space-small;
         padding: $space-small;
         @include is-debug();
-        a {
-            display: flex;
-            flex-direction: column;
-            text-align: -webkit-center;
-            img {
-                height: 32px;
-                width: 32px
-            }
-            span {
-                font-size: 12px;
-            }
-        }
-        transition: $cubic-transition;
+        transition: $cubic-transition; 
     }
     .item:first-child {
         margin-top: 0px;

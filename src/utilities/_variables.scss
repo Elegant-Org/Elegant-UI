@@ -1,12 +1,12 @@
 /* Typography */
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-sans-serif: 'Roboto', sans-serif !default;
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
 
 /* Typography Sizes and Weights */
 
 $base-font-size: 1rem !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.2 !default;
 
 $size-1: 0.875rem !default; // 14px For <p>,<li>,<h5>,<h6>
 $size-2: 0.6875rem !default; // 12px For small message;
@@ -24,6 +24,15 @@ $weight-semibold: 600 !default;
 $weight-bold: 700 !default;
 $weight-bolder: 900 !default;
 
+$elegant-font-weight-map: (
+    light: $weight-light,
+    normal: $weight-normal,
+    medium: $weight-medium,
+    semibold: $weight-semibold,
+    bold: $weight-bold,
+    bolder: $weight-bolder,
+);
+
 /* Miscellaneous */
 $radius-small: 2px !default;
 $radius: 4px !default;
@@ -34,7 +43,7 @@ $radius-large: 6px !default;
 // Primary
 $primary-black: #4E535A !default;
 $primary-purple: #79589E !default;
-$primary-white: #FBFBFD !default;
+$primary-white: #FFFFFF !default;
 $primary-blue: #3268B9 !default;
 
 // Secondary
@@ -45,29 +54,53 @@ $secondary-silver: #E3E7EF !default;
 $secondary-green: #1ABC9C !default;
 
 // Shades of Colors
-$shades-black-near:	#262B31;
-$shades-black-light: #7A7F87;
+$shades-black-near:	#262B31 !default;
+$shades-black-light: #7A7F87 !default;
 
-$shades-silver-light: #EEF1F6;
-$shades-silver-lighter: #EEF1F6;
+$shades-silver-light: #EEF1F6 !default;
+$shades-silver-lighter: #EEF1F6 !default;
 
-$shades-purple-light: #A985CF;
-$shades-purple-dark: #4B2E6F;
+$shades-purple-light: #A985CF !default;
+$shades-purple-dark: #4B2E6F !default;
 
-$shades-green-dark: #428F54;
-$shades-green-light: #A3F3B1;
+$shades-green-dark: #428F54 !default;
+$shades-green-light: #A3F3B1 !default;
 
-$shades-yellow-dark: #C88906;
-$shades-yellow-light: #FFEB75;
+$shades-yellow-dark: #C88906 !default;
+$shades-yellow-light: #FFEB75 !default;
 
-$shades-blue-dark: #003E88;
-$shades-blue-light: #6B95EC;
+$shades-blue-dark: #003E88 !default;
+$shades-blue-light: #6B95EC !default;
 
-$shades-red-dark: #C54047;
-$shades-red-light: #FFA4A1;
+$shades-red-dark: #C54047 !default;
+$shades-red-light: #FFA4A1 !default;
 
-$shades-gray-dark: #687485;
-$shades-gray-light: #C7D4E7;
+$shades-gray-dark: #687485 !default;
+$shades-gray-light: #C7D4E7 !default;
+
+
+/* Color Map */
+$elegant-color-map: (
+    black:  $primary-black,
+    white: $primary-white,
+    purple: $primary-purple,
+    blue: $primary-blue,
+    gray: $secondary-gray,
+    red: $secondary-red,
+    yellow: $secondary-yellow,
+    silver: $secondary-silver,
+    green: $secondary-green
+);
+
+/* Color Based*/
+$primary: $primary-purple !default;
+
+$info: $secondary-gray !default;
+$success: $secondary-green !default;
+$warning: $secondary-yellow !default;
+$danger: $secondary-red !default;
+
+$text: $primary-black;
 
 /* Global Accessor */
 $background-color: $primary-white;
@@ -89,26 +122,33 @@ $space-small-yy: 0.625em 0 0.625em 0;
 $space-small: 0.625em;
 
 /* Depth */
-$depth-1: 0 2px 2px 0 rgba(0,0,0,0.14),
-            0 3px 1px -2px rgba(0,0,0,0.12),
-            0 1px 5px 0 rgba(0,0,0,0.2);
 
-$depth-1-half: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+$depth-1-half:  0 3px 3px 0 rgba(0, 0, 0, 0.14), 
+                0 1px 7px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -1px rgba(0, 0, 0, 0.2);
+                
+// $depth-1:   0 2px 2px 0 rgba(0,0,0,0.14),
+//             0 3px 1px -2px rgba(0,0,0,0.12),
+//             0 1px 5px 0 rgba(0,0,0,0.2);
+$depth-1: 0 2px 4px 0 rgba(0,0,0,.08);
 
-$depth-2: 0 4px 5px 0 rgba(0,0,0,0.14),
+$depth-2:   0 4px 5px 0 rgba(0,0,0,0.14),
             0 1px 10px 0 rgba(0,0,0,0.12),
             0 2px 4px -1px rgba(0,0,0,0.3);
 
-$depth-3: 0 8px 17px 2px rgba(0,0,0,0.14),
+$depth-3:   0 8px 17px 2px rgba(0,0,0,0.14),
             0 3px 14px 2px rgba(0,0,0,0.12),
             0 5px 5px -3px rgba(0, 0, 0, 0.2);
 
-$depth-4: 0 16px 24px 2px rgba(0,0,0,0.14),
+$depth-4:   0 16px 24px 2px rgba(0,0,0,0.14),
             0 6px 30px 5px rgba(0,0,0,0.12),
             0 8px 10px -7px rgba(0,0,0,0.2);
 
-$depth-5: 0 24px 38px 3px rgba(0,0,0,0.14),
+$depth-5:   0 24px 38px 3px rgba(0,0,0,0.14),
             0 9px 46px 8px rgba(0,0,0,0.12),
             0 11px 15px -7px rgba(0,0,0,0.2);
 
 $bottom-shadow: 0 1rem 1rem -1rem rgba(10,10,10,.2);
+
+/* Transition */
+$cubic-transition: all 0.3s cubic-bezier(.25,.8,.25,1);

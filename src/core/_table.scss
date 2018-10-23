@@ -1,0 +1,30 @@
+/* Table Style */
+table { 
+    background: $primary-white;
+    border-radius: $radius;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: $depth-1;
+    thead tr { 
+        height:60px;
+        font-size:16px;
+        background: $primary; 
+        color: $primary-white; 
+        font-weight: $weight-bold; 
+    }
+    td, th { 
+        padding: $space-normal-xx; 
+        text-align: left; 
+    }
+    /* Zebra striping */
+    tbody tr:nth-of-type(even) { 
+        @include fill-color($shades-silver-light);
+    }
+    tbody tr {
+        height:48px; 
+        border-bottom:1px solid $secondary-silver;
+        &:last-child {
+            border:0; 
+        }
+    }
+}

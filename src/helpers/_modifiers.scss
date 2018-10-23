@@ -1,10 +1,24 @@
 /* has modified*/
 .has {
-  &-purple {
-    &--background {
-      @include fill-color($secondary-silver);
+ 
+  /* Background Color */
+  &-background-color{
+    @each $schema-name, $color in $elegant-color-map {
+      &--#{$schema-name}{
+        @include fill-color($color);
+      }
     }
   }
+
+  /* Font Color */
+  &-color{
+    @each $schema-name, $color in $elegant-color-map {
+      &--#{$schema-name}{
+        color: $color
+      }
+    }
+  }
+
   /* elevation modified*/
   &-depth {
     &-0 {
@@ -33,10 +47,6 @@
     }
   }
 
-  /* Container */
-  &-container {
-    padding: $space-normal;
-  }
   /* No */
   &-no {
     &--margin {

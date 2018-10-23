@@ -1,7 +1,7 @@
 /* Table Style */
 table { 
     background: $primary-white;
-    border-radius: 6px;
+    border-radius: $radius;
     overflow: hidden;
     width: 100%;
     box-shadow: $depth-1;
@@ -13,12 +13,12 @@ table {
         font-weight: $weight-bold; 
     }
     td, th { 
-        padding: 6px; 
+        padding: $space-normal-xx; 
         text-align: left; 
     }
     /* Zebra striping */
     tbody tr:nth-of-type(even) { 
-        background: $shades-silver-light; 
+        @include fill-color($shades-silver-light);
     }
     tbody tr {
         height:48px; 

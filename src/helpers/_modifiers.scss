@@ -47,37 +47,25 @@
     }
   }
 
-  /* No */
-  &-no {
-    &--margin {
-      margin: 0;
-    }
-    &--padding {
-      padding: 0;
-    }
-    &--background {
-      background-color: transparent !important;
-      border-color: transparent !important;
-    }
-    &--box-shadow {
-      box-shadow: none !important;
-    }
-  }
 }
 
 /* is modified*/
 .is {
-  &-debug {
-    border: 1px dotted $secondary-red;
+  &-display {
+    &--none {
+      display: none;
+    }
+    &--block {
+      display: block;
+    }
   }
-  &-active {
-    font-weight: $weight-bold;
-  }
-  &-hidden {
-    display: none;
-  }
-  &-shown {
-    display: block;
+  &-visibility {
+    &--none {
+      visibility: hidden;
+    }
+    &--shown {
+      visibility: inherit;
+    }
   }
   &-text {
     &--uppercase {

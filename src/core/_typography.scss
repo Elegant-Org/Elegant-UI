@@ -89,6 +89,13 @@ blockquote {
   }
 }
 
+.is {
+  &-active {
+    font-weight: $weight-bold;
+  }
+}
+
+
 /* Anchor tab */
 a {
   color: $primary-black;

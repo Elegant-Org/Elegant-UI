@@ -14,6 +14,7 @@
         }
     }
     .item {
+        min-width: 70px;
         margin: $space-small 0 $space-small;
         padding: $space-small;
         @include is-debug();

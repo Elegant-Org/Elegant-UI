@@ -21,28 +21,28 @@
 
   /* elevation modified*/
   &-depth {
-    &-0 {
+    &--0 {
       box-shadow: none !important;
     }
-    &-1 {
+    &--1 {
       box-shadow:  $depth-1;
     }
-    &-1-half {
+    &--1-half {
       box-shadow:  $depth-1-half;
     }
-    &-2 {
+    &--2 {
       box-shadow:  $depth-2;
     }
-    &-3 {
+    &--3 {
       box-shadow:  $depth-3;
     }
-    &-4 {
+    &--4 {
       box-shadow:  $depth-4;
     }
-    &-5 {
+    &--5 {
       box-shadow:  $depth-5;
     }
-    &-bottom {
+    &--bottom {
       box-shadow: $bottom-shadow;
     }
   }

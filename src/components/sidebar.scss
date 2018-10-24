@@ -6,7 +6,7 @@
   @include fill-color($primary-white);
   /* Block Debuging */
   @include is-debug();
-  &-brand {
+  &__brand {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,13 +14,13 @@
     /* Block Debuging */
     @include is-debug();
   }
-  &-menu {
+  &__menu {
     line-height: $base-line-height;
     padding-left: 0;
     padding: $space-normal-xx;
     /* Block Debuging */
     @include is-debug();
-    &-item {
+    .item {
       font-size: $size-4;
       padding: $space-small-yy;
       /* Block Debuging */

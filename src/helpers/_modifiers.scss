@@ -21,63 +21,51 @@
 
   /* elevation modified*/
   &-depth {
-    &-0 {
+    &--0 {
       box-shadow: none !important;
     }
-    &-1 {
+    &--1 {
       box-shadow:  $depth-1;
     }
-    &-1-half {
+    &--1-half {
       box-shadow:  $depth-1-half;
     }
-    &-2 {
+    &--2 {
       box-shadow:  $depth-2;
     }
-    &-3 {
+    &--3 {
       box-shadow:  $depth-3;
     }
-    &-4 {
+    &--4 {
       box-shadow:  $depth-4;
     }
-    &-5 {
+    &--5 {
       box-shadow:  $depth-5;
     }
-    &-bottom {
+    &--bottom {
       box-shadow: $bottom-shadow;
     }
   }
 
-  /* No */
-  &-no {
-    &--margin {
-      margin: 0;
-    }
-    &--padding {
-      padding: 0;
-    }
-    &--background {
-      background-color: transparent !important;
-      border-color: transparent !important;
-    }
-    &--box-shadow {
-      box-shadow: none !important;
-    }
-  }
 }
 
 /* is modified*/
 .is {
-  &-debug {
-    border: 1px dotted $secondary-red;
+  &-display {
+    &--none {
+      display: none;
+    }
+    &--block {
+      display: block;
+    }
   }
-  &-active {
-    font-weight: $weight-bold;
-  }
-  &-hidden {
-    display: none;
-  }
-  &-shown {
-    display: block;
+  &-visibility {
+    &--none {
+      visibility: hidden;
+    }
+    &--shown {
+      visibility: inherit;
+    }
   }
   &-text {
     &--uppercase {

@@ -7,6 +7,7 @@ $render-mode: optimizeLegibility !default;
 
 $base-font-size: 1rem !default;
 $base-line-height: 1.2 !default;
+$base-letter-spacing: .9px !default;
 
 $size-1: 0.875rem !default; // 14px For <p>,<li>,<h5>,<h6>
 $size-2: 0.6875rem !default; // 12px For small message;
@@ -78,6 +79,9 @@ $shades-red-light: #FFA4A1 !default;
 $shades-gray-dark: #687485 !default;
 $shades-gray-light: #C7D4E7 !default;
 
+/* Tone setter */
+$darken-tone: 10%;
+$lighten-tone: 10%;
 
 /* Color Map */
 $elegant-color-map: (
@@ -101,6 +105,7 @@ $warning: $secondary-yellow !default;
 $danger: $secondary-red !default;
 
 $text: $primary-black;
+$reverse-text: $primary-white;
 
 /* Global Accessor */
 $background-color: $primary-white;
@@ -152,3 +157,4 @@ $bottom-shadow: 0 1rem 1rem -1rem rgba(10,10,10,.2);
 
 /* Transition */
 $cubic-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+$cubic-transition-slow: all 0.8s cubic-bezier(.25,.8,.25,1);

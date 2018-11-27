@@ -1,0 +1,34 @@
+.ui {
+    @include is-debug();
+    &.button{
+        @include is-debug();
+        @include cta-text-transform();
+        @include fill-color($primary);
+
+        cursor: pointer;
+        padding: $space-small;
+        border-radius: $radius;    
+        color: $reverse-text;   
+        font-size: $base-font-size;
+        font-weight: $weight-medium;
+        letter-spacing: $base-letter-spacing;
+        
+        /**
+        * Transition
+        **/
+        transition: $cubic-transition-slow; 
+        
+        /**
+        * Hover Animation
+        **/
+        &:hover {
+            background: darken($primary, $darken-tone);
+            transition: $cubic-transition-slow; 
+        } 
+    }
+}
+
+// Remove Outline border from button CHROME,FIREFOX,SAFARI
+button:focus {
+    outline:0;
+}

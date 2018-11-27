@@ -119,6 +119,19 @@
                     background: $danger;
                 }
             }
+        }
+
+        /**
+        * Transparent Style
+        */
+        &.transparent {
+            background: transparent;
+            color: $text;
+            &:hover {
+                color: $text;
+            }
+        }  
+
     }
 }
 

@@ -74,6 +74,51 @@
                 background: darken($danger, $darken-tone);
             }
         }
+
+        /**
+        * Outline Style
+        */
+        &.outline {
+            background: transparent;
+            border: solid 2px $primary;
+            color: $primary;
+            &:hover {
+                background: $primary;
+                color: $reverse-text;
+                transition: $cubic-transition-slow;   
+            }
+            &.info {
+                border: solid 2px $info;
+                color: $info;
+                &:hover {
+                    color: $reverse-text;
+                    background: $info;
+                }
+            }
+            &.success {
+                border: solid 2px $success;
+                color: $success;
+                &:hover {
+                    color: $reverse-text;
+                    background: $success;
+                }
+            }
+            &.warning {
+                border: solid 2px $warning;
+                color: $warning;
+                &:hover {
+                    color: $text;
+                    background: $warning;
+                }
+            }
+            &.danger {
+                border: solid 2px $danger;
+                color: $danger;
+                &:hover {
+                    color: $reverse-text;
+                    background: $danger;
+                }
+            }
     }
 }
 

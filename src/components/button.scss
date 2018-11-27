@@ -45,6 +45,35 @@
         &.is-large {
             font-size: $size-5;
         }
+
+        /**
+        * Types
+        **/
+        &.info {
+            @include fill-color($info);
+            &:hover {
+                background: darken($info, $darken-tone);
+            }
+        }
+        &.success {
+            @include fill-color($success);
+            &:hover {
+                background: darken($success, $darken-tone);
+            }
+        }
+        &.warning {
+            @include fill-color($warning);
+            color: $text;
+            &:hover {
+                background: darken($warning, $darken-tone);
+            }
+        }
+        &.danger {
+            @include fill-color($danger);
+            &:hover {
+                background: darken($danger, $darken-tone);
+            }
+        }
     }
 }
 

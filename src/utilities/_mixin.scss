@@ -5,6 +5,12 @@
   }
 }
 
+@mixin cta-text-transform {
+  @if($is-action-uppercase == true){
+    text-transform: uppercase;
+  }
+}
+
 /* Fill Color in block */
 @mixin fill-color($hex) {
   background-color: $hex;

@@ -14,6 +14,24 @@ $max-image-height: 198px;
         border-radius: $radius;
         box-shadow: $depth-1;
         overflow: hidden;
+        
+        /**
+        * Transition
+        **/
+        transition: $cubic-transition-slow; 
+
+        .content {
+            padding: $space-small; 
+        }
+
+        .image {
+            img {
+                object-fit: cover;
+                max-height: $max-image-height;
+                width: 100%;
+            }
+        }
+
 
     }
 }

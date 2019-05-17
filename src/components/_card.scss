@@ -1,0 +1,51 @@
+$max-image-height: 198px;
+
+.ui {
+    @include is-debug();
+    &.card{
+        @include is-debug();
+        background: $primary-white;
+        
+        @if($is-dark-theme == true){
+            background: $primary-black;
+            color: $primary-white;
+        }
+
+        border-radius: $radius;
+        box-shadow: $depth-1;
+        overflow: hidden;
+        
+        /**
+        * Transition
+        **/
+        transition: $cubic-transition-slow; 
+
+        .content {
+            padding: $space-small; 
+        }
+
+        .image {
+            img {
+                object-fit: cover;
+                max-height: $max-image-height;
+                width: 100%;
+            }
+        }
+
+        .cover-image {
+            min-height: 160px;
+            display: flex;
+            align-items: flex-end;
+            padding: $space-small;
+            background-size: cover;
+            background-image: linear-gradient(
+                    to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)
+                ),
+                var(
+                    --bg-image,
+                    url('http://lorempixel.com/500/500/abstract')
+                );
+        }
+
+    }
+}

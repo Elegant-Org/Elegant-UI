@@ -5,6 +5,7 @@ $generate-responsive : true !default;
 $font-smoothing: true !default;
 $is-debug: false !default;
 $is-action-uppercase: true !default;
+$is-dark-theme: true;
 
 .is {
     &-debug {

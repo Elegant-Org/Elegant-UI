@@ -6,10 +6,10 @@
         @include fill-color($primary);
 
         cursor: pointer;
-        padding: $space-small;
+        padding: 0.825em;
         border-radius: $radius;    
         color: $reverse-text;   
-        font-size: $base-font-size;
+        font-size: 0.875rem;
         font-weight: $weight-medium;
         letter-spacing: $base-letter-spacing;
         
@@ -37,7 +37,7 @@
             border-radius: $radius-small;    
         }
         &.is-normal{
-            font-size: $base-font-size;
+            font-size: 0.875rem;
         }
         &.is-medium{
             font-size: $size-4;   
@@ -164,6 +164,18 @@
             transition: 0s;
         }
 
+        /**
+        * Disabled
+        **/
+        &.disabled {
+            cursor: default;
+            opacity: .45!important;
+            background-image: none!important;
+            -webkit-box-shadow: none!important;
+            box-shadow: none!important;
+            pointer-events: none!important;
+        }
+
     }
 }
 
@@ -171,3 +183,4 @@
 button:focus {
     outline:0;
 }
+

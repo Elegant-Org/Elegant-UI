@@ -1,0 +1,19 @@
+$max-image-height: 198px;
+
+.ui {
+    @include is-debug();
+    &.card{
+        @include is-debug();
+        background: $primary-white;
+        
+        @if($is-dark-theme == true){
+            background: $primary-black;
+            color: $primary-white;
+        }
+
+        border-radius: $radius;
+        box-shadow: $depth-1;
+        overflow: hidden;
+
+    }
+}

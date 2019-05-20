@@ -47,5 +47,33 @@ $max-image-height: 198px;
                 );
         }
 
+        .gradient {
+            min-height: 160px;
+            padding: $space-small;
+            &.linear {
+                @each $gradient-name, $colors in $elegant-gradient-map {
+                    &.#{$gradient-name} {
+                        @include elegant-linear-gradient(
+                            var(--gradient-angle,$elegant-gradient-angle), // Color Bleeding Angle
+                            #{nth($colors,1)}, // Start Color
+                            var(--gradient-start-percentage,$elegant-gradient-start-percentage), // Starting Opacity
+                            #{nth($colors,2)}, // End Color 
+                            var(--gradient-end-percentage,$elegant-gradient-end-percentage), // End Opacity
+                        );
+                        &.with-shadow{
+                            @include elegant-linear-gradient(
+                                var(--gradient-angle,$elegant-gradient-angle), // Color Bleeding Angle
+                                #{nth($colors,1)}, // Start Color
+                                var(--gradient-start-percentage,$elegant-gradient-start-percentage), // Starting Opacity
+                                #{nth($colors,2)}, // End Color 
+                                var(--gradient-end-percentage,$elegant-gradient-end-percentage),  // End Opacity
+                                true // With Shadow
+                            );
+                        }
+                    }
+                }
+                
+            }
+        }
     }
 }

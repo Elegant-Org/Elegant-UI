@@ -96,6 +96,21 @@ $elegant-color-map: (
     green: $secondary-green
 );
 
+/* Gradient Map */
+
+$elegant-gradient-map: (
+    purple: ($shades-purple-dark, $primary-purple),
+    green:  ($shades-green-dark,$secondary-green),
+    red:    ($shades-red-dark, $secondary-red),
+    blue:   ($shades-blue-dark,$primary-blue),
+    yellow: ($shades-yellow-dark,$secondary-yellow),
+    gray:   ($shades-gray-dark,$secondary-gray)    
+);
+
+$elegant-gradient-angle: -46deg !default;
+$elegant-gradient-start-percentage: 0% !default;
+$elegant-gradient-end-percentage: 100% !default;
+
 /* Color Based*/
 $primary: $primary-purple !default;
 

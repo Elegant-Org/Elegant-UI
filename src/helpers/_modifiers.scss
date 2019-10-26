@@ -1,20 +1,19 @@
 /* has modified*/
 .has {
- 
   /* Background Color */
-  &-background-color{
+  &-background-color {
     @each $schema-name, $color in $elegant-color-map {
-      &--#{$schema-name}{
+      &--#{$schema-name} {
         @include fill-color($color);
       }
     }
   }
 
   /* Font Color */
-  &-color{
+  &-color {
     @each $schema-name, $color in $elegant-color-map {
-      &--#{$schema-name}{
-        color: $color
+      &--#{$schema-name} {
+        color: $color;
       }
     }
   }
@@ -25,28 +24,27 @@
       box-shadow: none !important;
     }
     &--1 {
-      box-shadow:  $depth-1;
+      box-shadow: $depth-1;
     }
     &--1-half {
-      box-shadow:  $depth-1-half;
+      box-shadow: $depth-1-half;
     }
     &--2 {
-      box-shadow:  $depth-2;
+      box-shadow: $depth-2;
     }
     &--3 {
-      box-shadow:  $depth-3;
+      box-shadow: $depth-3;
     }
     &--4 {
-      box-shadow:  $depth-4;
+      box-shadow: $depth-4;
     }
     &--5 {
-      box-shadow:  $depth-5;
+      box-shadow: $depth-5;
     }
     &--bottom {
       box-shadow: $bottom-shadow;
     }
   }
-
 }
 
 /* is modified*/
@@ -77,8 +75,19 @@
     &--bold {
       font-weight: $weight-bold;
     }
-    &--bolder{
+    &--bolder {
       font-weight: $weight-bolder;
+    }
+  }
+  &-align {
+    &--center {
+      text-align: center;
+    }
+    &--left {
+      text-align: left;
+    }
+    &--right {
+      text-align: right;
     }
   }
 }
